@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Aplicacion</string>
+    <string name="fichero_preferencias">com.tfg.aplicacio.PREFERENCE_FILE_KEY</string>
+    <string name="media_player">Reproducir</string>
+    <string name="anterior_cancion">Anterior</string>
+    <string name="parar">Parar</string>
+    <string name="continuar">Reproducir</string>
+    <string name="siguiente">Siguiente</string>
 </resources>

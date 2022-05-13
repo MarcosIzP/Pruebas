@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".AuthActivity">
 
     <LinearLayout
+        android:id="@+id/layout_auth"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -23,7 +25,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
 
         <EditText
             android:id="@+id/intr_pw"
@@ -31,7 +38,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,34 +51,61 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_regist"
+                android:id="@+id/btn_registrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroud="@color/Colorprimario"
-                android:textColor="@android:color/white"
+                android:background="@color/Colorsecundario"
                 android:text="Registrar"
-
-                />
-
+                android:textColor="#212121" />
 
             <Space
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/btn_acces"
+                android:id="@+id/btn_acceder"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroud="@color/Colorprimariooscuro"
-                android:textColor="@android:color/white"
+                android:background="@color/purple_200"
                 android:text="Acceder"
 
-                />
+                android:textColor="@color/black" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="377dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@mipmap/google"
+        android:text="Google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/song_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="@string/media_player" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
